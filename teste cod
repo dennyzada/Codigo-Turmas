@@ -1,0 +1,67 @@
+programa {
+    funcao inicio() {
+	    real Mmatematica [5] ,Mportugues [5] ,Mhistoria[5] ,Mingles [5] ,Mfisica[5]
+	    cadeia Mnome [5]
+	    inteiro Mindice
+	    Mindice = 0
+	    para (Mindice = 0; Mindice <= 4; Mindice ++)
+	    {
+            escreva ("Digite um nome: ") 
+            leia (Mnome[Mindice])
+            escreva ("Digite a nota de matemática: ") 
+            leia (Mmatematica[Mindice])
+            escreva ("Digite a nota de portugues: ")
+            leia (Mportugues[Mindice])
+            escreva ("Digite a nota de historia: ") 
+            leia (Mhistoria[Mindice])
+            escreva ("Digite a nota de ingles: ") 
+            leia (Mingles[Mindice])
+            escreva ("Digite a nota de fisica: ")
+            leia (Mfisica[Mindice])
+	    }
+        escreva ("Turma 1: \nDisciplina Matemática: ") 
+        para (Mindice = 0; Mindice <= 4; Mindice++)
+        {
+            escreva ("\n- " ,Mnome[Mindice])
+            se (Mmatematica[Mindice] >= 60)
+            escreva (" APROVADO ")
+            senao
+            escreva (" REPROVADO ")
+        }
+        escreva ("\nDisciplina Portugues: ") 
+        para (Mindice = 0; Mindice <= 4; Mindice++) 
+        {
+            escreva ("\n- " ,Mnome[Mindice])
+            se (Mportugues [Mindice] >=60) 
+            escreva (" APROVADO ") 
+            senao
+            escreva (" REPROVADO ")
+        }
+        escreva ("\nDisciplina historia: ") 
+        para (Mindice = 0; Mindice <= 4; Mindice++)
+        {
+            escreva ("\n- " ,Mnome[Mindice])
+            se (Mhistoria[Mindice] >= 60) 
+            escreva (" APROVADO ")
+            senao
+            escreva (" REPROVADO ")
+        }
+        escreva ("\nDisciplina ingles: ") 
+        para (Mindice = 0; Mindice <= 4; Mindice++)
+        {
+            escreva ("\n- " ,Mnome[Mindice])
+            se (Mingles [Mindice] >=60)
+            escreva (" APROVADO ")
+            senao escreva (" REPROVADO ")
+        }
+        escreva ("\nDisciplina fisica: ") 
+        para (Mindice = 0; Mindice <= 4; Mindice++)
+        {
+            escreva ("\n- " ,Mnome[Mindice])
+            se (Mfisica[Mindice] >=60) 
+            escreva (" APROVADO ")
+            senao
+            escreva (" REPROVADO ")
+        }
+    }
+}
