@@ -1,6 +1,6 @@
 programa {
     funcao inicio() {
-	    real Mmatematica [5] ,Mportugues [5] ,Mhistoria [5] ,Mingles [5] ,Mfisica [5]
+	    real Mmatematica [3][5] ,Mportugues [3][5] ,Mhistoria [3][5] ,Mingles [3][5] ,Mfisica [3][5]
 	    cadeia Mnome [3][5]
 	    inteiro Mindice ,Mturma
 	    Mindice = 0
@@ -12,15 +12,15 @@ programa {
 			    escreva ("Digite um nome: ") 
 			    leia (Mnome[Mturma][Mindice])
 			    escreva ("Digite a nota de matemática: ") 
-			    leia (Mmatematica[Mindice])
+			    leia (Mmatematica[Mturma][Mindice])
 			    escreva ("Digite a nota de portugues: ")
-			    leia (Mportugues[Mindice])
+			    leia (Mportugues[Mturma][Mindice])
 			    escreva ("Digite a nota de historia: ") 
-			    leia (Mhistoria[Mindice])
+			    leia (Mhistoria[Mturma][Mindice])
 			    escreva ("Digite a nota de ingles: ") 
-			    leia (Mingles[Mindice])
+			    leia (Mingles[Mturma][Mindice])
 			    escreva ("Digite a nota de fisica: ")
-			    leia (Mfisica[Mindice])
+			    leia (Mfisica[Mturma][Mindice])
 			}
 		}
 
@@ -30,7 +30,7 @@ programa {
     			para (Mindice = 0; Mindice <= 4; Mindice++)
     			{
     			    escreva ("\n- " ,Mnome[Mturma][Mindice])
-    			    se (Mmatematica[Mindice] >= 60)
+    			    se (Mmatematica[Mturma][Mindice] >= 60)
     			    escreva (" APROVADO ")
     			    senao
     			    escreva (" REPROVADO ")
@@ -39,7 +39,7 @@ programa {
     			para (Mindice = 0; Mindice <= 4; Mindice++) 
     			{
     			    escreva ("\n- " ,Mnome[Mturma][Mindice])
-    			    se (Mportugues [Mindice] >=60) 
+    			    se (Mportugues[Mturma][Mindice] >=60) 
     			    escreva (" APROVADO ") 
     			    senao
     			    escreva (" REPROVADO ")
@@ -48,7 +48,7 @@ programa {
     			para (Mindice = 0; Mindice <= 4; Mindice++)
     			{
     			    escreva ("\n- " ,Mnome[Mturma][Mindice])
-    			    se (Mhistoria[Mindice] >= 60) 
+    			    se (Mhistoria[Mturma][Mindice] >= 60) 
     			    escreva (" APROVADO ")
     			    senao
     			    escreva (" REPROVADO ")
@@ -57,7 +57,7 @@ programa {
     			para (Mindice = 0; Mindice <= 4; Mindice++)
     			{
     			    escreva ("\n- " ,Mnome[Mturma][Mindice])
-    			    se (Mingles [Mindice] >=60)
+    			    se (Mingles[Mturma][Mindice] >=60)
     			    escreva (" APROVADO ")
     			    senao escreva (" REPROVADO ")
     			}
@@ -65,7 +65,7 @@ programa {
     			para (Mindice = 0; Mindice <= 4; Mindice++)
     			{
     			    escreva ("\n- " ,Mnome[Mturma][Mindice])
-    			    se (Mfisica[Mindice] >=60) 
+    			    se (Mfisica[Mturma][Mindice] >=60) 
     			    escreva (" APROVADO ")
     			    senao
     			    escreva (" REPROVADO ")
