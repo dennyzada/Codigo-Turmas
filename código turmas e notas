@@ -1,6 +1,6 @@
 programa {
     funcao inicio() {
-	    real Mmatematica [5] ,Mportugues [5] ,Mhistoria[5] ,Mingles [5] ,Mfisica[5]
+	    real Mmatematica [5] ,Mportugues [5] ,Mhistoria [5] ,Mingles [5] ,Mfisica [5]
 	    cadeia Mnome [3][5]
 	    inteiro Mindice ,Mturma
 	    Mindice = 0
